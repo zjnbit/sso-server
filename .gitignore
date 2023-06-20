@@ -36,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/.idea/
+/web-api/src/main/resources/config/application-test.yml
+/web-api/src/main/resources/config/logback-test.xml
