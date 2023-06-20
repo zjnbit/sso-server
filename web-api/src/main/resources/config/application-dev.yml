@@ -1,0 +1,39 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/zjnbit_bbs?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+  redis:
+    database: 1
+    host: localhost
+    port: 6379
+    password: 123456
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: 123456
+logging:
+  level:
+    com.zjnbit.bbs: debug
+bbs:
+  aliyun:
+    security:
+      access-key-id: xxx
+      access-key-secret: xxx
+    oss:
+      bucket: xxx
+      endpoint: oss-cn-hongkong.aliyuncs.com
+      cdn-url: cdn.bbs.com
+      callback-url: https://bbs.simple.com/api/callback/oss/aliyun
+  mail:
+    host: smtpdm.bbs.com
+    port: 465
+    from: ZJNBIT<no-reply@notice.bbs.com>
+    user: no-reply@notice.bbs.com
+    pass: xxxxxxx
+    ssl-enable: true
+  secure:
+    jwt-secret-key: abcdefghijklmnopqrstuvwxyz
